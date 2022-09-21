@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:hsl(30, 38%, 92%);
+}
+div.content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 800px;
+    margin: 400px auto;
+}
+img{
+    width:100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.img{
+    /* border-top-left-radius: 10px; */
+    width: 100%;
+    display: grid;
+}
+.imgm{
+    display: none;
+}
+.card{
+    background-color:#fff ;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 40px;
+}
+h6{
+    color: hsl(228, 12%, 48%);
+    letter-spacing: 1.2rem;
+    text-transform: uppercase;
+    
+}
+h2{
+    font-size: 45px;
+    padding-top: 45px;
+    color: hsl(212, 21%, 14%);
+}
+p.desc{
+    color: hsl(228, 12%, 48%);
+    padding-top: 40px;
+    letter-spacing: 2px;
+}
+p span{
+    text-transform: uppercase;
+}
+
+p.NP{
+    padding-top: 35px;
+    line-height: 45px;
+    display: inline-block;
+    font-size: 50px;
+    font-weight: 900;
+    color:  hsl(158, 36%, 37%);
+}
+.OP{
+    text-align: center;
+    justify-content: center;
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+    margin-top:50px ;
+    margin-left: 14px;
+ } 
+ .para{
+
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+ }
+ button{
+    display: block;
+    margin-top: 65px;
+    width: 85%;
+    padding: 8px;
+    border-radius: 8px;
+    background-color:hsl(158, 36%, 37%);
+    color: #fff;
+    text-align: center;
+}
+button img{
+    width: 30px;
+    height: 20px;
+}
+@media screen and (max-width:500px) {
+
+    div.content{
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    }
+    .img{
+        display:none ;
+    }
+    .imgm{
+        display: grid;
+    }
+   
+    img{
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 10px;
+    }
+    .card{
+        border-top-right-radius: 0px;
+    }
+    .para{
+        padding-top: 15px;
+    }
+    h2{
+        font-size: 35px;
+    }
+    p.desc{
+        font-size: 14px;
+    }
+}
